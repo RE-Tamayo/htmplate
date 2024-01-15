@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error | <?= $code ?> </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #f7f7f7;
+            text-align: center;
+            width: auto;
+            height: 650px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 50%;
+            background-color: #3d3d3d;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .details {
+            margin-top: 10px;
+            font-size: 12px;
+            background-color: #d9534f;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><?= $code ?> | <?= $title ?></h1>
+        <p><?= $message ?></p>
+        <?php if(!$isClosure): ?>
+            <div class="details">
+                <p>File: <?= $trace[0]['file'] ?> | Function: <?= $trace[0]['function'] ?> | Line: <?= $trace[0]['line'] ?></p>
+            </div>
+        <?php endif; ?>
+    </div>
+</body>
+</html>

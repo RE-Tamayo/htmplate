@@ -1,0 +1,22 @@
+{
+  "name": "retamayo/htmplate",
+  "description": "An implementation of templating with html files",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Retamayo\\Htmplate\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "RE-Tamayo",
+      "email": "rosas.emerjoe.tamayo@gmail.com"
+    }
+  ],
+  "minimum-stability": "alpha",
+  "require": {
+    "php": "^8.1",
+    "ext-dom": "*"
+  }
+}
