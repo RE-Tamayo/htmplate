@@ -6,12 +6,12 @@ class PathResolver
 {
     public static function getBasePath()
     {
-        return dirname(dirname(dirname(dirname(__DIR__))));
+        return dirname(dirname(dirname(dirname(dirname(__DIR__)))));
     }
 
     public static function getLibPath()
     {
-        return dirname(dirname(__DIR__));
+        return dirname(__DIR__);
     }
 
     public static function getViewPath()
